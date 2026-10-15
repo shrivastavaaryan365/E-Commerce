@@ -7,7 +7,7 @@ const products = [
         name: "Wireless Headphones",
         category: "electronics",
         price: 2499,
-        image: "🎧"
+        image: "headphone.jpg"
     },
 
     {
@@ -15,7 +15,7 @@ const products = [
         name: "Smart Watch",
         category: "electronics",
         price: 3999,
-        image: "⌚"
+        image: "watches.jpg"
     },
 
     {
@@ -23,7 +23,7 @@ const products = [
         name: "Premium T-Shirt",
         category: "fashion",
         price: 799,
-        image: "👕"
+        image: "tshirt.jpg"
     },
 
     {
@@ -66,7 +66,7 @@ const products = [
         image: "👞"
     }
 
-];
+].map((product) => ({ ...product, image: `photos/${product.image}`}));
 
 
 /* ================= CART ================= */
